@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -13,6 +14,22 @@ body{
 header{
     height: 60px;
     background-color: black;
+    text-align: right;
+
+}
+
+header > div {
+    display: inline-block;
+    font-size: 0.7rem;
+    background-color: gray;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 5px 0 0;
+}
+
+svg{
+    vertical-align: middle;
 }
 
 /*MAIN*/
@@ -20,6 +37,7 @@ header{
 main{
     margin: auto;
     background-color: black;
+    overflow: auto;
 }
 
 .main-container{
@@ -28,22 +46,33 @@ main{
     justify-content: center;
     width: 100%;
     height: 80vh;
-    overflow: auto;
+    margin: auto;
 }
 
 .photos{
-    width: calc(100% / 7);
-    margin: 5px 3px;
+    width: calc(100% / 8);
+    margin: 3px 3px;
+    position: relative;
 }
 
 img{
     width: 100%;
 }
 
+.photos div{
+    background-color: rgba(128, 128, 128, 0.7);
+    color: white;
+    position: absolute;
+    padding: 2px;
+    bottom: 5px;
+    left: 0;
+    font-size: small;
+    line-height: 10px;
+}
+
 /*FOOTER*/
 
 footer{
-    height: 100px;
-    background-color: blue;
-    
+    height: 80px;
+    background-color: gray;
 }
