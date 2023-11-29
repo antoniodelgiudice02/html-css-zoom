@@ -74,5 +74,52 @@ img{
 
 footer{
     height: 80px;
-    background-color: gray;
+    background-color: rgb(43, 43, 43);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-container__tools{
+    display: flex;
+    align-content: space-around;
+}
+
+.footer-container__tools div{
+    padding: 5px;
+}
+
+.footer-container__tools_option div{
+    width: 100%;
+    text-align: center;
+}
+
+.select{
+    margin: auto;
+}
+
+.footer-container__tools_option span{
+    color: white;
+    font-size: small;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer-container__quit{
+    color: rgb(255, 0, 0);
+    background-color: rgb(94, 94, 94);
+    height: 100%;
+    line-height: 80px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.footer-container__quit span{
+    line-height: 80px;
+    vertical-align: middle;
 }
